@@ -2,3 +2,9 @@
   <app-sidebar></app-sidebar>
   <app-gifs-page class="container"></app-gifs-page>
 </div>
+
+<ul>
+  <li class="text" *ngFor="let item of items | async">
+    {{item.name}}
+  </li>
+</ul>
